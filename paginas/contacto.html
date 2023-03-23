@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/eagle_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style_nav.css">
+<!-- Iconos Redes Sociales -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Le meto mano al bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Pagina principal</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header__logo">
+        <a href="#"><img src="../img/logo_tienda.png"
+                alt="logo"></a>
+    </div>
+    <button id="abrir" class="header__open_menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
+    <nav class="header__nav visible" id="nav">
+        
+        <button class="header__close_menu" id="cerrar"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+        <ul id="header__lista">
+            <li class="nav__opcion"><a href="../media_ficha.html">Home</a></li>
+            <li class="nav__opcion" id="plegable"><a href="">Productos</a>
+                <ul>
+                    <li><a href="./paginas/productos.html#dulces">1. DULCES</a></li>
+                    <li><a href="./paginas/productos.html#bebidas_frias">2. BEBIDAS FRIAS</a></li>
+                    <li><a href="./paginas/productos.html#bebidas_calientes">3. BEBIDAS CALIENTES</a></li>
+                    <li><a href="./paginas/productos.html#tortas">4. TORTAS</a></li>
+                </ul>
+            </li>
+            <li class="nav__opcion"><a href="">About Us</a></li>
+            <li class="nav__opcion"><a href="">Contacto</a></li>
+            <li class="nav__opcion"><a href="">Testimonios</a></li>
+        </ul>
+    </nav>
+    <div class="header__button">
+        <button><a href="../media_ficha.html"><span>Buscar Catalogo</span></a></button>
+    </div>
+</header>
+<main>
+    <div class="contenedor_principal">
+        <div class="contenedor1">
+            <h1>Contactanos para recibir ofertas</h1>
+            <img id="img_dog" src="https://cdn.pixabay.com/animation/2022/12/05/15/23/15-23-06-837_512.gif" alt="sdas">
+            <p> Te enviaremos info con los mejores descuentos. Tenemos gran variedad de productos a base de café que te gustarán, solo necesitas llenar el formulario para  obtener el catálogo de descuentos para este mes...</p>
+           
+            <button>learn more</button>
+        </div>
+        <div class="contenedor2">
+            <h2>Formulario de Clientes</h2>
+            <form action="#">
+                <div class="form__bloque1">
+                    <div class="bloque1__subloque">
+                        <label for="from">Nombres:</label>
+                        <input class="caja" type="text" id="from" placeholder="Juan Miguel">
+                    </div>
+                    <div class="bloque1__subloque">
+                        <label for="to">Apellidos:</label>
+                        <input class="caja" type="text" id="to" placeholder="Diaz">
+                    </div>
+                </div>
+                <div class="form__bloque2">
+                    <div class="bloque2__subloque">
+                        <label for="date">Correo:</label>
+                        <input class="caja" type="text" id="date" placeholder="juanmy.3900@gmail.com">
+                    </div>
+                    <div class="bloque2__subloque">
+                        <label for="duration">Edad:</label>
+                        <input  class="caja" type="text" id="duration" placeholder="23 años">
+                    </div>
+                    <div class="bloque2__subloque">
+                        <label for="adult">Ciudad:</label>
+                        <input class="caja" type="text" id="adult" placeholder="Villavicencio - Colombia">
+                    </div>
+                    <div class="bloque2__subloque">
+                        <label for="child">Telefono Contacto:</label>
+                        <input class="caja" type="text" id="child" placeholder="+57-314-385-4917">
+                    </div>
+                </div>   
+            </form>
+            <button>ENIVAR</button>
+        </div>
+    </div>
+</main>
+
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<div class="contenedor_info">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio architecto optio nobis, quasi esse, sint vitae minus voluptatum repellat, sed nisi corrupti officia explicabo et possimus iste asperiores cum similique!</p>
+<br>
+<hr>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h2 class="contenedor__subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing.
+    </h2>
+    <p class="contenedor__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita commodi quos provident iusto sequi animi. Aperiam at ipsum quo a! Non numquam impedit ea quis, incidunt saepe soluta dicta. Voluptatibus aperiam maiores natus corporis.</p>
+</div> 
+ -->
+
+<footer>
+    <div class="row p-5 bg-warning  text-white d-flex justify-content-center text-center  align-items-md-baseline principal">
+        <div class="col-xs-12 col-md-6 col-lg-4 ">
+            <p class="h3">Info</p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4 red" >
+            <p class="h5 mb-4">Redes</p>
+            <!-- Seccion de iconos -->
+            <div class="text-center footer-icons-locate redes">
+                    <a class="icon-config text-decoration-none me-5" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="icon-config text-decoration-none me-5" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="icon-config text-decoration-none me-5" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon-config text-decoration-none me-5" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="icon-config text-decoration-none me-5" id="tiktok" href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>        
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <p class="text-white text-secondary text-center">MAPA</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.344887442849!2d-73.64384216511229!3d4.152414000000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e2d80bed5410d%3A0x41a3b6fd90707111!2sCaf%C3%A9%20Carajillo%20Express!5e0!3m2!1ses!2sco!4v1679550083592!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-xs-12 mt-5 pt-4">
+            <p class="text-white text-secondary text-center"> &copy; 2023-Juan Camilo Gualteros | Todos los derechos
+                reservados</p>
+        </div>
+
+    </div>
+</footer>
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
