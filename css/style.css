@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Monserrat" , sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* Se ubica el contenido del header con flex */
+.header{
+    padding: 30px 20px;
+    height: 100px;
+    position: sticky;
+    top: 5px;
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+}
+
+
+.header__close_menu, .header__open_menu{
+    display: none;
+}
+
+.header .header__logo img {
+
+    width: 90px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+
+.header .header__nav ul {
+    max-width: 1500px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.header .header__nav ul li#plegable {
+    position: relative;
+}
+.header .header__nav ul li#plegable ul{
+    display: none;
+}
+.header .header__nav ul li#plegable:hover ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    right: 10%;
+    gap: 10px;
+
+    /*  display: none; */
+}
+
+.header .header__nav ul.header__lista #plegable:hover ul{
+   
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 8px;
+
+    
+
+}
+
+.header .header__nav ul li{
+    list-style: none;
+}
+.header .header__nav ul li a, .header .header__nav ul li#plegable ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+.header .header__nav ul li:hover a, .header .header__nav ul li#plegable ul li:hover a{
+    color: orange;
+    text-decoration: underline;
+}
+
+ 
+
+.header .header__button button{
+    background-color: orange;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 17px;
+    border: 2px solid black;
+}
+.header .header__button button a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+.header .header__button button a span{
+    background-color: transparent;
+}
+.header .header__button button:hover{
+    background-color: mediumblue;
+}
+
+/* Se modifica todo lo del MAIN */
+
+main{
+    position: relative;
+    z-index: -2;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    background-image:  url(../img/coffee_fondo_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+main .contenedor_principal{
+    margin-top: 50px;
+    max-width: 1200px;
+    height: auto;
+    display: grid;
+    column-gap: 200px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .contenedor_principal .contenedor1{
+    background-color: darkblue;
+    height: 600px;
+    color: white;
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    
+}
+main .contenedor_principal .contenedor1 img#img_dog{
+    width: 200px;
+    height: auto;
+}
+main .contenedor_principal .contenedor1 h1{
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+main .contenedor_principal .contenedor1 p{
+    text-align: justify;
+    
+}
+
+main .contenedor_principal .contenedor2{
+    height: 600px;
+    padding-top: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+
+}
+main .contenedor_principal .contenedor2::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image:  url(../img/ladron_objetos.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: .7;
+    border-radius: 20px;
+    
+}
+
+
+
+.contenedor_principal .contenedor1 button{
+    font-size: 22px;
+    padding: 8px 15px;
+    max-width: 200px;
+    text-transform: unset;
+    color: white;
+    background-color: orange;
+    border: 5px bold red;
+    border-radius: 30px;
+}
+.contenedor_principal .contenedor1 button:hover, .contenedor2 button:hover{
+    background-color: rgb(157, 13, 131);
+   
+}
+
+.contenedor2 h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+.contenedor2 form .form__bloque1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+}
+
+.contenedor2 form input::placeholder{
+    text-align: center;
+}
+
+.contenedor2 form .form__bloque1 .bloque1__subloque label, .contenedor2 form .form__bloque2 .bloque2__subloque label {
+    display: block;
+    color: white;
+}
+.contenedor2 form .form__bloque1 .bloque1__subloque>input, input.caja, .contenedor2 button{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: white;
+ 
+}
+.contenedor2 form .form__bloque2{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 50px;
+}
+.contenedor2 button{
+    margin-top: 30px;
+    border: 5px bold red;
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+}
+
+
+/* PURO FOOTER ICONOS */
+footer{
+        
+    border-top: 5px solid black;
+}
+footer div.principal div.red div.footer-icons-locate {
+  
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    
+
+}
+footer div.principal div.red div.footer-icons-locate a.icon-config i {
+    color: #00405d;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+footer div.principal div.red div.footer-icons-locate a:hover i{
+    color: #7facce;
+}
+iframe{
+    width: 300px;
+    height: auto;
+}
+
+
+
+/* SE AJUSTA LA MEDIA PARA DISPOSITIVOS MÓVILES */
+@media screen and (max-width: 550px) {
+
+    /* HEADER  */
+  
+    .header__close_menu{
+        display: block;
+        position: fixed;
+        z-index: 5;
+        margin: 10px;
+        background-color: transparent;
+        left: 40;
+        top: 0;
+        border: 0px;
+        width: 15vw;
+        cursor: pointer;
+        font-size: 30px;
+        height: auto;
+    }
+    .header__open_menu{
+        display: block;
+        margin: 10px;
+        background-color: transparent;
+        right: 0;
+        top: 0;
+        border: 0px;
+        width: 15vw;
+        cursor: pointer;
+        font-size: 30px;
+        height: auto;
+    }
+    #nav{
+        position: absolute;
+        z-index: 5;
+    }
+  
+    .header__nav{
+        /* display: none; */
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        overflow: visible;
+    }
+    .header__nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .header__nav ul#header__lista{
+        align-items: end;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 100vh;
+        row-gap: 20px;
+        background-color: #fffefe;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .header .header__nav ul li#plegable ul{
+        display: none;
+    }
+    .header__nav ul#header__lista li a{
+        color: black;
+    }
+    .header__button{
+        display: none;
+    }
+
+
+    /* FORMULARIO CAJA */
+
+    main .contenedor_principal {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: grid;
+        row-gap: 30px;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .contenedor_principal .contenedor1{
+        width: 90vw;
+        height: auto;
+        min-height: 650px;
+    }
+    .contenedor_principal .contenedor1 button {
+        font-size: 16px;
+        padding: 8px 15px;
+        max-width: 200px;
+        text-transform: unset;
+        color: white;
+        background-color: orange;
+        border: 5px bold red;
+        border-radius: 15px;
+        
+    }
+
+    main .contenedor_principal .contenedor2 {
+        top: 100px;
+        width: 90vw;
+        height: auto;
+        max-height: 930px;
+        padding-top: 35px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        border-radius: 10px;
+        margin-bottom: 120px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .contenedor2 form .form__bloque2{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 50px;
+    }
+
+    /* CONTENIDO CAJA RESPONSIVE */
+
+    .contenedor_info{
+        text-align: justify;
+        margin: 10px 30px;
+    }
+
+    /* FOOTER RESPONSIVE */
+
+    footer div.principal div.redes div.footer-icons-locate {
+
+        margin-top: 50px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+
+    }
+    .redes{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+    }
+    .principal .red .redes a#tiktok{
+        display: none;
+    }
+    .red .redes a i{
+        font-size: 50px;
+    }
+    iframe{
+        margin: 0;
+        width: 250px;
+        height: auto;
+    }
+
+}
