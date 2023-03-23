@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body#body_testimonio{
+    background-image: url(../img/coffee_fondo_2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.contenedor_section {
+    margin-top: 100px;
+    padding: 20px 250px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+div.texto {
+    opacity: .9;
+    background-color: #7facce;
+    position: relative;
+    margin-left: 70px;
+    padding: 30px;
+    width: 50%;
+    font-size: 22px;
+    text-align: center;
+}
+
+div.texto h2 {
+    font-size: 28px;
+    font-family: 'Roboto Serif', serif;
+}
+
+div.texto p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color: white;
+    text-align: justify;
+}
+
+div.img_categoria {
+    position: relative;
+    display: inline;
+
+    width: 50%;
+    height: 100%;
+}
+
+div.img_categoria img {
+    position: absolute;
+    width: 270px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}

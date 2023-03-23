@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: "Monserrat" , sans-serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -108,20 +107,20 @@
 
 /* Se modifica todo lo del MAIN */
 
-main{
+main#contacto{
     position: relative;
     z-index: -2;
     display: flex;
     width: 100%;
     height: auto;
     padding: 20px 10px;
-    background-image:  url(../img/coffee_fondo_1.webp);
+    background-image:  url(../img/imagen_home1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
 }
 
-main .contenedor_principal{
+main#contacto .contenedor_principal{
     margin-top: 50px;
     max-width: 1200px;
     height: auto;
@@ -131,7 +130,7 @@ main .contenedor_principal{
     grid-template-columns: 1fr 1fr;
 }
 
-main .contenedor_principal .contenedor1{
+main#contacto .contenedor_principal .contenedor1{
     background-color: darkblue;
     height: 600px;
     color: white;
@@ -142,20 +141,20 @@ main .contenedor_principal .contenedor1{
     row-gap: 20px;
     
 }
-main .contenedor_principal .contenedor1 img#img_dog{
+main#contacto .contenedor_principal .contenedor1 img#img_dog{
     width: 200px;
     height: auto;
 }
-main .contenedor_principal .contenedor1 h1{
+main#contacto .contenedor_principal .contenedor1 h1{
     text-decoration: underline;
     text-transform: capitalize;
 }
-main .contenedor_principal .contenedor1 p{
+main#contacto .contenedor_principal .contenedor1 p{
     text-align: justify;
     
 }
 
-main .contenedor_principal .contenedor2{
+main#contacto .contenedor_principal .contenedor2{
     height: 600px;
     padding-top: 35px;
     padding-left: 25px;
@@ -168,7 +167,7 @@ main .contenedor_principal .contenedor2{
 
 
 }
-main .contenedor_principal .contenedor2::before{
+main#contacto .contenedor_principal .contenedor2::before{
     position: absolute;
     content: "";
     top: 0px;
@@ -272,6 +271,9 @@ footer div.principal div.red div.footer-icons-locate a.icon-config i {
 footer div.principal div.red div.footer-icons-locate a:hover i{
     color: #7facce;
 }
+.principal .red .redes a#tiktok{
+    display: none;
+}
 iframe{
     width: 300px;
     height: auto;
@@ -357,7 +359,7 @@ iframe{
 
     /* FORMULARIO CAJA */
 
-    main .contenedor_principal {
+    main#contacto .contenedor_principal {
         margin-top: 20px;
         width: 100%;
         max-width: 500px;
@@ -385,7 +387,7 @@ iframe{
         
     }
 
-    main .contenedor_principal .contenedor2 {
+    main#contacto .contenedor_principal .contenedor2 {
         top: 100px;
         width: 90vw;
         height: auto;
