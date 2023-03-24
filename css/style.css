@@ -458,7 +458,18 @@ iframe{
     }
 
 
-
+    /*  PARA LA PAGINA ABOUT */
+    .encuentranos{
+       margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .encuentranos div.acerca_nosotros{
+        order: -1;
+        text-align: left;
+        margin: 20px auto;
+    }
 
     /* FORMULARIO CAJA */
 
