@@ -102,6 +102,36 @@
     background-color: mediumblue;
 }
 
+/* ESTILOS PAGINA INDEX */
+
+.carousel-item{
+    height: 500px;
+}
+#carouselExampleSlidesOnly img{
+    position: relative;
+    z-index: -2;
+}
+#img_main {
+
+    margin: 30px auto;
+    width: 200px;
+    height: 200px;
+}
+
+#galeria{
+    margin: 50px auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    justify-content: center;
+
+}
+#galeria img{
+    width: 200px;
+    height: auto;
+}
+
 
 
 
@@ -278,7 +308,9 @@ section#dulces>h2, section#bebidas_frias>h2, section#bebidas_calientes>h2, secti
 
 
 /* ACA VA TODO EL CSS DE TESTIMONIOS */
-
+#titulos h1{
+    text-align: center;
+}
 body#body_testimonio, body#body_productos, body#body_index{
     background-image: linear-gradient(55deg,#efebc4, #dae46b );
     
@@ -398,6 +430,35 @@ iframe{
         display: none;
     }
 
+    /*PARA EL INDEX  */
+    #galeria{
+        grid-template-columns: 1fr;
+    }
+    #galeria img{
+        width: 300px;
+        margin: 30px;
+        height: auto;
+    }
+    .texto_extra {
+        max-width: 400px;
+        padding: 5px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto_extra img{
+        order: 0;
+    }
+    .sect_anuncios{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+        align-items: center;
+    }
+
+
+
 
     /* FORMULARIO CAJA */
 
@@ -494,6 +555,11 @@ iframe{
         justify-content: center;
         flex-wrap: nowrap;
 
+    }
+    /* ocultamos la info de mi footer */
+
+    .la-info p{
+        display: none;
     }
     .redes{
         margin-top: 20px;
