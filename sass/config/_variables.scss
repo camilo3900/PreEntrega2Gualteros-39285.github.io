@@ -1,0 +1,27 @@
+
+$colores: (
+    'bg-footer': #f7bb08,
+    'redes-color':#00405d,
+    'redes-color-hover':#7facce,
+    'color-copy-footer': #F71735,
+    'myGray': #FDFFFC,
+    
+    'myGreenBlue': #41EAD4,
+);
+
+$sizeFuentes:(
+    "titulos": 35px,
+    "subtitulos": 25px,
+    "cards_titulo": 27px,
+    "cards_texto": 22px,
+    "parrafos": 18px,
+);
+
+/* Transiciones */
+
+@mixin animacionUp {
+    transition: all 0.5s;
+}
+@keyframes galeria {
+    0% { transform: translateY(-20px); }
+}

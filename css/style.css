@@ -1,11 +1,11 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Monserrat" , sans-serif;
     font-weight: 500;
     text-transform: uppercase;
-}
+} */
 /* Se ubica el contenido del header con flex */
 
 /* AQUI VA EL MENU DE NAVEGACION DE TODAS LAS PAGINAS */
@@ -105,7 +105,7 @@
 /* ESTILOS PAGINA INDEX */
 
 .carousel-item{
-    height: 500px;
+    height: 40vh;
 }
 #carouselExampleSlidesOnly img{
     position: relative;
@@ -114,8 +114,8 @@
 #img_main {
 
     margin: 30px auto;
-    width: 200px;
-    height: 200px;
+
+    height: 55vh;
 }
 
 #galeria{
@@ -128,7 +128,7 @@
 
 }
 #galeria img{
-    width: 200px;
+    width: 400px;
     height: auto;
 }
 

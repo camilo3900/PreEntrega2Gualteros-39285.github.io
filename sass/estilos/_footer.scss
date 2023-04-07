@@ -1,0 +1,75 @@
+
+/* PURO FOOTER ICONOS */
+.footer{
+    background-color: map-get($colores, bg-footer);
+    border-top: 5px solid black;
+    & &__principal{
+
+        div.la-info, div.red{
+
+            p.footer__titular{
+                
+                    color: white;
+                    font-size: 28px;
+                    font-weight: 700;
+                    margin-bottom: 40px;
+   
+            }
+
+            p{  line-height: 30px;
+                text-transform: none;
+                text-transform: uppercase;
+
+            }
+
+        }
+    }
+
+
+    & &__principal{
+        .red .footer-icons-locate{
+            margin-top: 50px;
+            margin-left: 30px;
+            display: flex;
+            flex-wrap: nowrap;
+
+            a.icon-config {
+                i {
+                    color: map-get($colores , redes-color);
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                &:hover i{
+                    color: map-get($colores , redes-color-hover);
+                }
+            }
+        }
+        & div.mapa{
+            p{
+                font-size: 28px;
+                font-weight: 700;
+            }
+            p.footer__titular{
+                color: white!important;
+                        font-size: 28px;
+                        font-weight: 700;
+            }
+            iframe{
+                width: 100%;
+                height: auto;
+            }
+        }
+        & .copy{
+            p{
+            color: map-get($colores , color-copy-footer )!important;
+            font-size: 18px;
+            font-style: italic;
+            }
+        }
+    }
+
+
+}
+
+
+

@@ -5,17 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Hoja de estilos -->
+    <!-- tipo de fuentes utilizada-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- fuente karla:parrafos | fuente Arvo: titulos, frases -->
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/eagle_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="./sass/main.css">
+    
 <!-- Iconos Redes Sociales -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- Le meto mano al bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
     <title>Pagina principal</title>
+    <!-- SEO -->
+    <meta name="keywords" content="Cafe espresso, dulces, bebidas de cafe, mini chocolaticos, tortas, galletas artesanales">
+    <meta name="description" content="Coffee-Kingdom les ofrece el mejor café de Villavicencio. Puedes pedir un café a tu preferencia y acompañarlo con deliciosas galletas.">
 </head>
 
 <body id="body_index">
@@ -43,23 +51,26 @@
                 <li class="nav__opcion"><a href="./paginas/testimonios.html">Testimonios</a></li>
             </ul>
         </nav>
-        <div class="header__button">
-            <button><a href="../media_ficha.html"><span>Buscar Catalogo</span></a></button>
+        <div class="header__search">
+            <div>
+                <img src="./img/buscar-icon.png" alt="buscar">
+                <input type="text" placeholder="Buscar...">
+            </div>
         </div>
     </header>
 
     <!-- CARRUSEL DE IMAGENES -->
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="false" data-bs-interval="10" data-bs-pause="hover">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="false" data-bs-interval="10" data-bs-pause="hover">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/carrousel1.jpg" class="d-block w-100 opacity-75" alt="...">
+            <img src="./img/carrousel1.jpg" class="d-block w-100 opacity-75" alt="caarrusel-1">
           </div>
           <div class="carousel-item">
-            <img src="./img/carrousel2.jpg" class="d-block w-100 opacity-75" alt="...">
+            <img src="./img/carrousel2.jpg" class="d-block w-100 opacity-75" alt="carrusel-2">
           </div>
           <div class="carousel-item">
-            <img src="./img/galletas-coffee.webp" class="d-block w-100 opacity-75" alt="...">
+            <img src="./img/cafetera.jpg" class="d-block w-100 opacity-75" alt="carrusel-3">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
@@ -83,10 +94,7 @@
                 <h1>bienvenido a coffee-kingdom</h1>
             </div>
 
-            
-
             <div class="texto_extra">
-                <!-- <img style="width:300px; height: auto;" src="./img/imagen_home1.webp" alt="img main" title="granos de cafe"> -->
 
                 <img id="img_main" src="./img/coffee_cat.jpg" alt="drinking cat">
                 <p>Lorem ipsum dolor sit amet, <span> adipisicing elit. Iusto incidunt perspiciatis</span> atque itaque
@@ -96,10 +104,11 @@
 
         </main>
         <!-- Seccion de anuncios publicitarios -->
+        <hr class="linea">
         <section class="sect_anuncios">
             <div class="texto_comercial">
 
-                <h2>Comerciales </h2>
+                <h2 class="home__subtitulo">Comerciales </h2>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima, tempore mollitia assumenda eius, corporis officiis excepturi ut laudantium aut vel soluta!</p>
                 
@@ -119,9 +128,9 @@
 
         </aside>
 
-        <hr>
+        <hr class="linea">
 
-        <h2>GALERIA</h2>
+        <h2 class="galeria_titulo home__subtitulo">GALERIA</h2>
         <section id="galeria">
             
 
@@ -140,17 +149,17 @@
 
         </section>
     </div>
-    <footer>
-        <div class="row p-5 bg-warning  text-white d-flex justify-content-center text-center  align-items-md-baseline principal">
+    <footer class="footer">
+        <div class="row p-5 bg-warning  text-white d-flex justify-content-center text-center  align-items-md-baseline footer__principal">
             <div class="col-xs-12 col-md-6 col-lg-4 text-start la-info">
-                <p class="h3">Info</p>
-                <p>calle 54 # 23A-12</p>
+                <p class="h3 footer__titular">Info</p>
+                <p>Calle 54 # 23A-12</p>
                 <p>coffee-kingsonm@gmail.com</p>
                 <p></p>
                 <p>+57-317-652-3287</p>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 red" >
-                <p class="h5 mb-4">Redes</p>
+                <p class="h5 mb-4 footer__titular">Redes</p>
                 <!-- Seccion de iconos -->
                 <div class="text-center footer-icons-locate redes">
                         <a class="icon-config text-decoration-none me-5" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -160,12 +169,12 @@
                         <a class="icon-config text-decoration-none me-5" id="tiktok" href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>        
                 </div>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
-                <p class="text-white text-secondary text-center">MAPA</p>
+            <div class="col-xs-12 col-md-6 col-lg-4 mapa">
+                <p class=" text-secondary text-center footer__titular">MAPA</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.344887442849!2d-73.64384216511229!3d4.152414000000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e2d80bed5410d%3A0x41a3b6fd90707111!2sCaf%C3%A9%20Carajillo%20Express!5e0!3m2!1ses!2sco!4v1679550083592!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="col-xs-12 mt-5 pt-4">
-                <p class="text-white text-secondary text-center"> &copy; 2023-Juan Camilo Gualteros | Todos los derechos
+            <div class="col-xs-12 mt-5 pt-4 copy">
+                <p class=" text-secondary text-center"> &copy; 2023-Juan Camilo Gualteros | Todos los derechos
                     reservados</p>
             </div>
     
