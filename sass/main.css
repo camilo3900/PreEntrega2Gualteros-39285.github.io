@@ -164,7 +164,16 @@ div#padding_contenido main#main-del-home #titulos h1 {
 
 #carouselExampleSlidesOnly img {
   position: relative;
+  height: 50vh;
   z-index: -2;
+}
+
+h2.galeria_titulo {
+  color: red;
+  margin-left: 30px;
+  padding: 22px;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 #padding_contenido {
@@ -250,7 +259,7 @@ body#body__about main#main_de_contacto .container #contenedorHistoria .contenido
 body#body__about main#main_de_contacto .container #contenedorLocalizar {
   padding: 20px 30px;
   margin-top: 20px;
-  background-color: aqua;
+  background-color: red;
 }
 body#body__about main#main_de_contacto .container .encuentranos iframe {
   width: 100%;
@@ -296,6 +305,190 @@ section.contenedor_section .card .text-muted {
     background-size: cover;
 
 } */
+/* ESTILOS PAGINA DE CONTACTO */
+/* Se modifica todo lo del MAIN */
+main#contacto {
+  position: relative;
+  z-index: -2;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  background-image: url(../img/imagen_home1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+
+main#contacto .contenedor_principal {
+  margin-top: 50px;
+  max-width: 1200px;
+  height: auto;
+  display: grid;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+main#contacto .contenedor_principal .contenedor1 {
+  background-color: transparent;
+  height: 600px;
+  color: white;
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+main#contacto .contenedor_principal .contenedor1 img#img_dog {
+  width: 200px;
+  height: auto;
+}
+
+main#contacto .contenedor_principal .contenedor1 h1 {
+  font-size: 2rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main#contacto .contenedor_principal .contenedor1 p {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+main#contacto .contenedor_principal .contenedor2 {
+  height: 600px;
+  padding-top: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+main#contacto .contenedor_principal .contenedor2::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(../img/cerdito.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.7;
+  border-radius: 20px;
+}
+
+.contenedor_principal .contenedor1 button, .contenedor2 button {
+  font-size: 18px;
+  padding: 8px 15px;
+  max-width: 200px;
+  text-transform: unset;
+  color: white;
+  background-color: orange;
+  border: 5px bold red;
+  border-radius: 30px;
+}
+
+.contenedor2 button {
+  max-width: 500px;
+}
+
+.contenedor_principal .contenedor1 button:hover, .contenedor2 button:hover {
+  background-color: rgb(157, 13, 131);
+}
+
+.contenedor2 h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contenedor2 form .form__bloque1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 20px;
+}
+
+.contenedor2 form input::-moz-placeholder {
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.contenedor2 form input::placeholder {
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.contenedor2 form .form__bloque1 .bloque1__subloque label, .contenedor2 form .form__bloque2 .bloque2__subloque label {
+  display: block;
+  color: white;
+}
+
+.contenedor2 form .form__bloque1 .bloque1__subloque > input, input.caja, .contenedor2 button {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 12px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.contenedor2 form .form__bloque2 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 30px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.contenedor2 button {
+  margin-top: 30px;
+  border: 5px bold red;
+  background-color: orange;
+  color: white;
+  font-weight: 700;
+}
+
+/* ACA VA TODO EL CSS DE PAGINA DE PRODUCTOS */
+.titulo_productos {
+  margin-top: 40px;
+  text-align: center;
+}
+
+section#dulces, section#bebidas_frias, section#bebidas_calientes, section#tortas {
+  margin-top: 100px;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+section#dulces h2, section#bebidas_frias h2, section#bebidas_calientes h2, section#tortas h2 {
+  color: red;
+  margin-left: 30px;
+  padding: 22px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+section#dulces > h2, section#bebidas_frias > h2, section#bebidas_calientes > h2, section#tortas > h2 {
+  margin-left: 100px;
+}
+
 @media screen and (max-width: 550px) {
   .header button.header__open_menu {
     display: block;
@@ -414,7 +607,7 @@ section.contenedor_section .card .text-muted {
     background-color: rgb(156, 91, 91);
   }
   #main-del-home {
-    background-color: red;
+    background-color: transparent;
   }
   #main-del-home #titulos {
     display: flex;
@@ -426,7 +619,7 @@ section.contenedor_section .card .text-muted {
     font-weight: 700;
   }
   #main-del-home .texto_extra {
-    background-color: yellow;
+    /* background-color: yellow; */
     text-align: center;
   }
   #main-del-home .texto_extra p {
@@ -453,7 +646,7 @@ section.contenedor_section .card .text-muted {
   .sect_anuncios .texto_comercial h2 {
     margin-top: 20px;
     text-align: center;
-    color: white;
+    color: #FDFFFC;
     font-weight: 700;
   }
   .sect_anuncios .texto_comercial p {
@@ -584,8 +777,14 @@ section.contenedor_section .card .text-muted {
     margin-bottom: 10px;
   }
   /* PRODUCTOS RESPONSIVE */
+  h1.titulo_productos {
+    color: #FDFFFC;
+  }
   section#dulces, section#bebidas_frias, section#bebidas_calientes, section#tortas {
     margin-left: 20px;
+  }
+  section#dulces h2, section#bebidas_frias h2, section#bebidas_calientes h2, section#tortas h2 {
+    color: #FDFFFC;
   }
   section#dulces > h2, section#bebidas_frias > h2, section#bebidas_calientes > h2, section#tortas > h2 {
     margin-left: auto;

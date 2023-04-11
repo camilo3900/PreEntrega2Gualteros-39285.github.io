@@ -18,7 +18,13 @@ div#padding_contenido {
 
 #carouselExampleSlidesOnly img {
     position: relative;
+    height: 50vh;
     z-index: -2;
+}
+h2.galeria_titulo{
+
+    @include subtitulos;
+    
 }
 
 #padding_contenido {
@@ -61,11 +67,7 @@ hr.linea {
     .texto_comercial {
 
         .home__subtitulo {
-            color: red;
-            margin-left: 30px;
-            padding: 22px;
-            font-size: map-get($sizeFuentes , subtitulos);
-            font-weight: 700;
+            @include subtitulos;
         }
 
     }

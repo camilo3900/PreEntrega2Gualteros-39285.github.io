@@ -4,9 +4,8 @@ $colores: (
     'redes-color':#00405d,
     'redes-color-hover':#7facce,
     'color-copy-footer': #F71735,
-    'myGray': #FDFFFC,
-    
-    'myGreenBlue': #41EAD4,
+    'color-gray': #FDFFFC,
+    'color-ligth-blue': #41EAD4,
 );
 
 $sizeFuentes:(
@@ -18,6 +17,14 @@ $sizeFuentes:(
 );
 
 /* Transiciones */
+
+@mixin subtitulos{
+    color: red;
+    margin-left: 30px;
+    padding: 22px;
+    font-size: map-get($sizeFuentes , subtitulos);
+    font-weight: 700;
+}
 
 @mixin animacionUp {
     transition: all 0.5s;
