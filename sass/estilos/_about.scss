@@ -11,7 +11,8 @@ body#body__about{
             
             margin-bottom: 20px;
             #contenedorHistoria{
-                background-color: red;
+                align-items: center;
+                background-color: #4d4d4d;
                 padding: 30px;
                 .contenido{
                     font-size: map-get($sizeFuentes, parrafos);
@@ -32,7 +33,7 @@ body#body__about{
             #contenedorLocalizar{
                 padding: 20px 30px;
                 margin-top: 20px;
-                background-color: red;
+                background-color: #4d4d4d;
             }
             .encuentranos{
                 iframe{

@@ -3,6 +3,22 @@
     margin-top: 40px;
     text-align: center;
 }
+.card{
+    background-color: #4d4d4d!important;
+
+    .card-body{
+        text-align: justify!important;
+        color: white;
+
+        .card-title{
+            @include nombres;
+        }
+        .card-text{
+            @include texto-tarjetas;
+            
+        }
+    }
+}
 
 section#dulces, section#bebidas_frias, section#bebidas_calientes, section#tortas{
     margin-top: 100px;
@@ -10,11 +26,13 @@ section#dulces, section#bebidas_frias, section#bebidas_calientes, section#tortas
     z-index: -1;
     margin-bottom: 50px;
     margin-left: 80px;
-    h2{
-        @include subtitulos;
+    div{
+        margin-bottom: 20px;
+        .sub{
+            h2{
+               /*  @include subtitulos; */
+            }
+        }
     }
 }
 
-section#dulces>h2, section#bebidas_frias>h2, section#bebidas_calientes>h2, section#tortas>h2{
-    margin-left: 100px;
-}

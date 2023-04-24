@@ -1,14 +1,48 @@
 
 /* PURO FOOTER ICONOS */
 .footer{
+    width: 100vw;
+    margin-bottom: 0px;
     background-color: map-get($colores, bg-footer);
     border-top: 5px solid black;
     & &__principal{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 100px;
+        justify-content: space-between;
+        padding:30px;
 
-        div.la-info, div.red{
-
+        div.mapa{
             p.footer__titular{
+                font-size: 28px!important;
+                color: white!important;
+                text-align: center;
+            }
+            .contenido-info{
+
+                p{
+                    color: white!important;
+                }
                 
+            }
+            .contenido-redes{
+
+                a.icon-config {
+                    i {
+                        color: map-get($colores , redes-color);
+                        font-size: 40px;
+                        margin-bottom: 30px;
+                    }
+                    &:hover i{
+                        color: map-get($colores , redes-color-hover);
+                    }
+                }
+            }
+        }
+                
+            p.footer__titular{
+                    text-transform: uppercase;
                     color: white;
                     font-size: 28px;
                     font-weight: 700;
@@ -23,53 +57,18 @@
             }
 
         }
-    }
-
-
-    & &__principal{
-        .red .footer-icons-locate{
-            margin-top: 50px;
-            margin-left: 30px;
-            display: flex;
-            flex-wrap: nowrap;
-
-            a.icon-config {
-                i {
-                    color: map-get($colores , redes-color);
-                    font-size: 40px;
-                    margin-bottom: 30px;
-                }
-                &:hover i{
-                    color: map-get($colores , redes-color-hover);
-                }
-            }
-        }
-        & div.mapa{
+        .copy{
+            margin-bottom: 0px;
+            padding: 20px;
             p{
-                font-size: 28px;
-                font-weight: 700;
-            }
-            p.footer__titular{
                 color: white!important;
-                        font-size: 28px;
-                        font-weight: 700;
-            }
-            iframe{
-                width: 100%;
-                height: auto;
-            }
-        }
-        & .copy{
-            p{
-            color: map-get($colores , color-copy-footer )!important;
-            font-size: 18px;
-            font-style: italic;
             }
         }
     }
+   
 
 
-}
+
 
 
 

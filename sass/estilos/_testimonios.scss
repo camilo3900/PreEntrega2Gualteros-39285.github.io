@@ -13,11 +13,11 @@ section.contenedor_section{
 
    .card{
     h2{
-        font-size: map-get($sizeFuentes , cards_titulo);
+        @include nombres;
     }
     p{
         text-align: justify;
-        font-size: map-get($sizeFuentes , cards_texto);
+        @include texto-tarjetas;
         text-transform: lowercase;
     }
     .text-muted{

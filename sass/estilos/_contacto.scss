@@ -10,12 +10,11 @@ main#contacto{
     width: 100%;
     height: auto;
     padding: 20px 10px;
-    background-image:  url(../img/imagen_home1.webp);
+    background-image:  url(../../img/fondo_contacto.webp);
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
 }
-
 main#contacto .contenedor_principal{
     margin-top: 50px;
     max-width: 1200px;
@@ -25,17 +24,15 @@ main#contacto .contenedor_principal{
     align-items: center;
     grid-template-columns: 1fr 1fr;
 }
-
 main#contacto .contenedor_principal .contenedor1{
     background-color: transparent;
     height: 600px;
-    color: white;
+    color: map-get($colores, color-texto-parrafo);
     padding: 0px 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
-    
+    row-gap: 20px;  
 }
 main#contacto .contenedor_principal .contenedor1 img#img_dog{
     width: 200px;
@@ -46,12 +43,11 @@ main#contacto .contenedor_principal .contenedor1 h1{
     font-family: 'Karla', sans-serif;
     font-weight: 700;
     text-transform: capitalize;
+
 }
 main#contacto .contenedor_principal .contenedor1 p{
-    text-align: justify;
-    font-size: 16px;
+    @include parrafo;  
     font-weight: 400;
-    
 }
 
 main#contacto .contenedor_principal .contenedor2{
@@ -74,42 +70,38 @@ main#contacto .contenedor_principal .contenedor2::before{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image:  url(../img/cerdito.jpg);
+    background-color: map-get($colores, color-fondo-formu);
     background-repeat: none;
     background-size: cover;
     background-position: center;
     z-index: -1;
     opacity: .7;
-    border-radius: 20px;
-    
+    border-radius: 20px;   
 }
-
-
-
 .contenedor_principal .contenedor1 button, .contenedor2 button{
     font-size: 18px;
     padding: 8px 15px;
     max-width: 200px;
     text-transform: unset;
-    color: white;
+    color: map-get($colores, color-texto-parrafo );
     background-color: orange;
     border: 5px bold red;
     border-radius: 30px;
+
+
 }
 .contenedor2 button{
-    max-width: 500px;
-}
-.contenedor_principal .contenedor1 button:hover, .contenedor2 button:hover{
-    background-color: rgb(157, 13, 131);
-   
-}
+    margin: auto;
+    max-width: 200px;
 
+}
 .contenedor2 h2{
     text-align: center;
     font-size: 22px;
     font-weight: 700;
     color: white;
     margin-bottom: 30px;
+
 }
 .contenedor2 form .form__bloque1{
     display: grid;
@@ -146,8 +138,12 @@ main#contacto .contenedor_principal .contenedor2::before{
 }
 .contenedor2 button{
     margin-top: 30px;
-    border: 5px bold red;
+    border: 3px bold red;
     background-color: orange;
     color: white;
     font-weight: 700;
 }
+
+
+
+

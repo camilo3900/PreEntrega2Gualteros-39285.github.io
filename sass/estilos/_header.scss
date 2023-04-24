@@ -4,7 +4,7 @@
     position: sticky;
     z-index: 5;
     top: 5px;
-    background-color: white;
+    background-color: map-get($colores, bg-footer);
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -18,7 +18,7 @@
     }
 
     & &__logo img {
-        width: 90px;
+        width: 150px;
         height: auto;
         margin-right: 20px;
     }
@@ -36,10 +36,10 @@
                 a{
                     text-decoration: none;
                     font-size: 17px;
-                    color: black;
+                    color: white;
                 }
                 &:hover a{
-                    color: orange;
+                    color: map-get($colores, color-menu-option );
                     text-decoration: underline;
                 }
             }
@@ -59,15 +59,10 @@
     
                         }
                         &:hover a{
-
                             color: orange;
-                            text-decoration: underline;
-
                         }
-                    }
-                    
+                    }    
                 }
-
                 &:hover ul {
                     position: absolute;
                     display: flex;
@@ -91,7 +86,6 @@
         border-radius: 50px;
         border-bottom: 2px solid white;
         margin-right: 10px;
-
         input {
             background: transparent;
             border: none;
@@ -106,7 +100,6 @@
             width: auto;
         }
     }
-
 }
 
 
